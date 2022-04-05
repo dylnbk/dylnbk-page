@@ -17,21 +17,20 @@
   background: transparent;
   border: none;
   color: rgba(207, 207, 207, 0.807);
-  font-size: 20px;
+  font-size: 21px;
   position: relative;
   animation:bouncy 5s infinite linear;
-  transition: 1s;
+  transition: 2s;
   padding: 5px 15px 5px 15px;
   margin-top: 5px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
 }
 
 #submit:hover {
-  text-shadow: 0px 0px 10px #ffffff;
-  letter-spacing: 3px;
-  font-size: 22px;
-  color: rgb(255, 255, 255);
+  text-shadow: 0 0 15px #ff71f6, 0 0 15px #34fff5;
+  color: rgb(253, 99, 225);
   cursor: pointer;
+  transition:all .5s ease-in-out;
 }
 
 ul#navbar {
@@ -86,7 +85,7 @@ form {
 }
 
 .message:hover {
-  box-shadow:0 0 10px rgba(251, 251, 251, 0.455);
+  box-shadow: 0 0 20px rgba(251, 251, 251, 0.156);
 }
 
 .content {
@@ -257,6 +256,12 @@ h1:hover:after {
     margin-top: -35px;
   }
 
+  .content {
+    width: 80%;
+    left: 10%;
+
+  }
+
   h1 {
     left: 50%;
     letter-spacing: 2px;
@@ -277,6 +282,7 @@ h1:hover:after {
 
   .message {
     margin-top: -35px;
+    width: 80%;
   }
 
 }
