@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <style>html{visibility: hidden;opacity:0;}</style>
-    <link type="image/png" sizes="32x32" rel="icon" href="love-32.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="/love-32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
@@ -19,7 +19,6 @@
     
     <div id="container"></div>
     <div class="content">
-      
       <h1 id="heading">dyln.bk</h1>
       <div class="line"></div>
 
@@ -35,25 +34,18 @@
           <p>
             <textarea class="message" name="message" required ></textarea>
           </p>
-          <p>
-            <button id="submit" type="submit">SEND MESSAGE</button>
+          <p>  
+            <button id="submit" type="submit">SEND ANOTHER MESSAGE</button>
           </p>
         </form>
       </div>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./contact.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script>
-
-      // fade in
-
-      $('#heading').delay(500).animate({"opacity": "1"}, 2000);
-      $('#navbar').delay(1650).animate({"opacity": "1"}, 2000);
-      $('.line').delay(800).animate({"opacity": "1"}, 2000);
-      $('form').delay(2000).animate({"opacity": "1"}, 3000);
 
       // rainbow text on click
 
@@ -64,13 +56,9 @@
     </script>
     <script>
 
-      // text drop in
-      const ul = document.querySelector('ul');
-      const tl = gsap.timeline();
-      tl.to(ul, { duration: .7, y: '15px' }, "+=1.6");       
+      const anchors = document.querySelectorAll('h1')
 
       // particle click effect
-      const anchors = document.querySelectorAll('h1')
 
       Array.prototype.forEach.call(anchors, function(anchor) {
         anchor.addEventListener('click', explode)
