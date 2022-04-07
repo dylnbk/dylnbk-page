@@ -22,13 +22,14 @@
       
       <h1 id="heading">dyln.bk</h1>
       <div class="line"></div>
-
-      <ul id="navbar">
-        <li><a href="https://soundcloud.com/dylnbk">MUSIC</a></li>
-        <li><a href="https://www.flickr.com/photos/195326075@N03/albums/72177720297807092">PHOTOGRAPHY</a></li>
-        <li><a href="https://www.deviantart.com/dylnbk">DRAWING</a></li>
-        <li><a href="https://github.com/dylnbk">CODE</a></li>
-      </ul>
+      <div id="slide">
+        <ul id="navbar">
+          <li><a href="https://soundcloud.com/dylnbk">MUSIC</a></li>
+          <li><a href="https://www.flickr.com/photos/195326075@N03/albums/72177720297807092">PHOTOGRAPHY</a></li>
+          <li><a href="https://www.deviantart.com/dylnbk">DRAWING</a></li>
+          <li><a href="https://github.com/dylnbk">CODE</a></li>
+        </ul>
+      </div>
 
       <div id="contact">
         <form name="contact" method="POST" action="/contact/contact" data-netlify="true">
@@ -43,16 +44,13 @@
     </div>
 
     <script type="module" src="/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js" integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <script>
 
       // fade in
 
-      $('#heading').delay(500).animate({"opacity": "1"}, 2000);
-      $('#navbar').delay(1650).animate({"opacity": "1"}, 2000);
-      $('.line').delay(800).animate({"opacity": "1"}, 2000);
+      $('#heading').delay(800).animate({"opacity": "1"}, 3000);
+      $('#navbar').delay(1750).animate({"opacity": "1"}, 3000);
+      $('.line').delay(800).animate({"opacity": "1"}, 3000);
       $('form').delay(2000).animate({"opacity": "1"}, 3000);
 
       // rainbow text on click
@@ -63,11 +61,6 @@
 
     </script>
     <script>
-
-      // text drop in
-      const ul = document.querySelector('ul');
-      const tl = gsap.timeline();
-      tl.to(ul, { duration: .7, y: '15px' }, "+=1.6");       
 
       // particle click effect
       const anchors = document.querySelectorAll('h1')
