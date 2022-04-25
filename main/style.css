@@ -30,6 +30,7 @@
   color: rgb(253, 99, 225);
   cursor: pointer;
   transition:all .5s ease-in-out;
+  transform: scale(1.1,1.1);
 }
 
 ul#navbar {

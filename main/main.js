@@ -24,7 +24,7 @@ function init() {
 
   // create a camera using the container for dimensions & set its position
   camera = new THREE.PerspectiveCamera( 45, container.offsetWidth / container.offsetHeight, 1, 2000 );
-  camera.position.set(0, 0, 380);
+  camera.position.set(0, 0, 320);
 
   // create a scene, no background, add fog - helps provide perspective
   scene = new THREE.Scene();
