@@ -163,7 +163,7 @@ a:hover::after{
 
 h1 {
   position: relative;
-  left: 27%;
+  left: 25%;
   top: 50%;
   transform: translate(-50%, -50%);
   display: block;
@@ -206,7 +206,7 @@ h1::after {
   -webkit-background-clip: text;
   background-clip: text;
   top: 0px;
-  left: 349px;
+  left: 317px;
   transition: 1s;
 }
 
@@ -223,8 +223,8 @@ h1:hover:before {
 }
 
 h1:hover:after {
-  top: -5px;
-  left: 345px;
+  top: -4px;
+  left: 315px;
   background-image: repeating-linear-gradient(
     90deg,
     transparent 0,
