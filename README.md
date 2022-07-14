@@ -1,3 +1,3 @@
 # dylnbk-page
 
-My personal page
+Three.js experiment
