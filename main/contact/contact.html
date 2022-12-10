@@ -19,30 +19,32 @@
     
     <div id="container"></div>
     <div class="content">
+      
       <h1 id="heading">dyln.bk</h1>
       <div class="line"></div>
-
       <ul id="navbar">
+        <li><a href="https://web-toolkit.netlify.app">APPS</a></li>
         <li><a href="https://www.dylnbk.page">BLOG</a></li>
         <li><a href="https://soundcloud.com/dylnbk">MUSIC</a></li>
         <li><a href="https://www.deviantart.com/dylnbk">ART</a></li>
-        <li><a href="https://www.flickr.com/photos/195326075@N03/albums/72177720297807092">PHOTOGRAPHY</a></li>
+        <li><a href="https://www.flickr.com/photos/195326075@N03/albums/72177720297807092">PHOTOS</a></li>
         <li><a href="https://github.com/dylnbk">CODE</a></li>
       </ul>
+
 
       <div id="contact">
         <form name="contact" method="POST" action="/contact/contact" data-netlify="true">
           <p>
             <textarea class="message" name="message" required ></textarea>
           </p>
-          <p>  
+          <p>
             <button id="submit" type="submit">SEND ANOTHER MESSAGE</button>
           </p>
         </form>
       </div>
     </div>
 
-    <script type="module" src="./contact.js"></script> 
+    <script type="module" src="./contact.js"></script>
     <script>
 
       // rainbow text on click
@@ -54,10 +56,9 @@
     </script>
     <script>
 
+      
       const anchors = document.querySelectorAll('h1')
-
       // particle click effect
-
       Array.prototype.forEach.call(anchors, function(anchor) {
         anchor.addEventListener('click', explode)
       })
