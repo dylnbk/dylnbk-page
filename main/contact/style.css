@@ -7,7 +7,6 @@
 }
 
 #heading {
-  opacity: 0;
   margin-bottom: 0%;
   margin-top: 1%;
 }
@@ -34,7 +33,6 @@
 }
 
 ul#navbar {
-  opacity: 0;
   padding: 0%;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -79,10 +77,6 @@ body:focus {
   outline: none !important;
 }
 
-form {
-  opacity: 0;
-}
-
 .message {
   width: 91%;
   margin-top: -15px;
@@ -113,16 +107,13 @@ form {
 
 .line {
   display: flex;
-  opacity: 0;
   gap: 5em;
-  width: 0%;
+  width: 100%;
   padding-top: 5px;
   top: 0;
-  left: 50%;
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.668);
   text-align: center;
-  animation: line 2s linear forwards;
   
 }
 
@@ -328,9 +319,4 @@ h1:hover:after {
     width: 50% !important;
   }
 
-}
-
-html {
-  visibility: visible;
-  opacity: 1;
 }
